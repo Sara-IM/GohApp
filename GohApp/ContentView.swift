@@ -20,7 +20,7 @@ struct ContentView: View {
             Divider()
             
            // Label("Your Location")
-            TextField(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/, text: "Your Location")
+//            TextField(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/, text: "Your Location")
 //            ZStack {
 //                    Button("Send") {
 //                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
