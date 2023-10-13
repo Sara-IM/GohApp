@@ -8,64 +8,86 @@
 import SwiftUI
 
 struct ContentView: View {
-    let literalColor = Color(#colorLiteral(red: 0.3589375615, green: 0.5140314698, blue: 0.455712378, alpha: 1))
+   // let literalColor = Color(#colorLiteral(red: 0.3589375615, green: 0.5140314698, blue: 0.455712378, alpha: 1))
+   // @State var index = 0
+    @State var userLocation : String = " "
+    @State var phoneNumber : Int = 0
 
     var body: some View {
-       
-        VStack {
-           
-            //.foregroundColor(Color("textFieldG")) to pu our colors
-            
-            Text("Create your journey").bold().font(.largeTitle)
-            Divider()
-            
-           // Label("Your Location")
-//            TextField(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/, text: "Your Location")
-//            ZStack {
-//                    Button("Send") {
-//                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-//                    }.buttonStyle(.borderedProminent)
-//            }
-                .padding()
-            //---------------------------
-//                ZStack{// this stack for custom color of btn
-//                    RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/).fill(Color(literalColor))
-//                        .frame(width: 123, height: 55)
-//                    Text("Send").font(.title2)//.color(.white)
-//                }// end zstack
-            
-            //-----------------------
-                //.buttonStyle(.borderedProminent)
-                
-             //.tint(.orange)
-                //.buttonStyle(.borderedProminent)// end btn
-                
-            //}// end ZStack
-        }//end VStack
-   //-----------------------------------
-   //-----------------------------------
-
+        VStack(alignment: .leading, spacing: 24){
         
+        //trailing right
+        //.foregroundColor(Color("textFieldG")) to up our colors
         
+        Text("Create your journey").bold().font(.largeTitle)
+        .foregroundColor(Color("titleGray"))/*.opacity(0.3)*/.cornerRadius(10)
+        
+        Divider()
+        //  foregroundColor(_:), foregroundStyle(_:), and tint(_:)
+        Label("Your Location", systemImage: " ")
+        TextField(" ", text: $userLocation)
+        .padding()
+        .background(Color("textFieldG")/*.opacity(0.3)*/.cornerRadius(10))
+        
+        Label("Phone number", systemImage: " ")
+        TextField(" ", text: $userLocation)
+        .padding()
+        .background(Color("textFieldG")/*.opacity(0.3)*/.cornerRadius(10))
+        
+        HStack {
+        Spacer()
+        Button("Sign In", action: {})
+        .frame(width: 157, height: 48)
+        //.padding(20)
+        .buttonStyle(.bordered).background(Color("Green")).foregroundColor(.white).cornerRadius(21).bold()
+        Spacer()}// end Hstack2
+        
+        }//end VStack1
         
         .padding()
-        
     }// end View
 }//end ContentView
-
-
 #Preview {
     ContentView()
 }
-//.buttonStyle(CustomButtonStyle())
-/*struct CustomButtonStyle: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .padding()
-            .background(Color(#colorLiteral(red: 0.3647058967, green: 0.5137255063, blue: 0.4666666667, alpha: 1)))
-            .foregroundColor(.white)
-            .cornerRadius(10)
-            .scaleEffect(configuration.isPressed ? 0.9 : 1.0)
-    }
-}
-*/
+/*
+ VStack(alignment: .leading, spacing: 24){
+ 
+ //trailing right
+ //.foregroundColor(Color("textFieldG")) to up our colors
+ 
+ Text("Create your journey").bold().font(.largeTitle)
+ .foregroundColor(Color("titleGray"))/*.opacity(0.3)*/.cornerRadius(10)
+ 
+ Divider()
+ //  foregroundColor(_:), foregroundStyle(_:), and tint(_:)
+ Label("Your Location", systemImage: " ")
+ TextField(" ", text: $userLocation)
+ .padding()
+ .background(Color("textFieldG")/*.opacity(0.3)*/.cornerRadius(10))
+ 
+ Label("Phone number", systemImage: " ")
+ TextField(" ", text: $userLocation)
+ .padding()
+ .background(Color("textFieldG")/*.opacity(0.3)*/.cornerRadius(10))
+ 
+ HStack {
+ Spacer()
+ Button("Sign In", action: {})
+ .frame(width: 157, height: 48)
+ //.padding(20)
+ .buttonStyle(.bordered).background(Color("Green")).foregroundColor(.white).cornerRadius(21).bold()
+ Spacer()}// end Hstack2
+ 
+ }//end VStack1
+ 
+ //-----------------------------------
+ //-----------------------------------
+ 
+ 
+ 
+ 
+ */
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+
