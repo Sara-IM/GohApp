@@ -9,7 +9,17 @@ import SwiftUI
 
 struct TabBarViwe: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView{
+            DiscoverView().tabItem {
+                Image(systemName: "globe")
+                Text("Discover")
+            }
+            
+            MyTripsView().tabItem {
+                Image(systemName: "figure.wave")
+                Text("My Trips")
+            }
+        }.tint(Color("Green"))
     }
 }
 

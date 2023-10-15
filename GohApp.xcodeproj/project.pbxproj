@@ -17,6 +17,11 @@
 		3D3E3B802ADAEC9200D530AB /* invitationsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E3B7F2ADAEC9100D530AB /* invitationsPage.swift */; };
 		3D3E3B862ADB336B00D530AB /* testPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E3B852ADB336B00D530AB /* testPage.swift */; };
 		3D3E3B8B2ADB58E800D530AB /* createPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E3B8A2ADB58E800D530AB /* createPage.swift */; };
+		562B3EFB2ADC0EEC003985A9 /* TabBarViwe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562B3EFA2ADC0EEC003985A9 /* TabBarViwe.swift */; };
+		562B3EFD2ADC0F70003985A9 /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562B3EFC2ADC0F70003985A9 /* LoginScreenView.swift */; };
+		562B3EFF2ADC0F9A003985A9 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562B3EFE2ADC0F9A003985A9 /* SignUpView.swift */; };
+		562B3F012ADC0FC6003985A9 /* MyTripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562B3F002ADC0FC6003985A9 /* MyTripsView.swift */; };
+		562B3F032ADC100A003985A9 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562B3F022ADC100A003985A9 /* DiscoverView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,11 @@
 		3D3E3B7F2ADAEC9100D530AB /* invitationsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = invitationsPage.swift; sourceTree = "<group>"; };
 		3D3E3B852ADB336B00D530AB /* testPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testPage.swift; sourceTree = "<group>"; };
 		3D3E3B8A2ADB58E800D530AB /* createPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createPage.swift; sourceTree = "<group>"; };
+		562B3EFA2ADC0EEC003985A9 /* TabBarViwe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViwe.swift; sourceTree = "<group>"; };
+		562B3EFC2ADC0F70003985A9 /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
+		562B3EFE2ADC0F9A003985A9 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		562B3F002ADC0FC6003985A9 /* MyTripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTripsView.swift; sourceTree = "<group>"; };
+		562B3F022ADC100A003985A9 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +112,11 @@
 			children = (
 				3D3E3B512AD42D2000D530AB /* GohAppApp.swift */,
 				3D3E3B532AD42D2000D530AB /* ContentView.swift */,
+				562B3EFA2ADC0EEC003985A9 /* TabBarViwe.swift */,
+				562B3EFC2ADC0F70003985A9 /* LoginScreenView.swift */,
+				562B3EFE2ADC0F9A003985A9 /* SignUpView.swift */,
+				562B3F002ADC0FC6003985A9 /* MyTripsView.swift */,
+				562B3F022ADC100A003985A9 /* DiscoverView.swift */,
 				3D3E3B7F2ADAEC9100D530AB /* invitationsPage.swift */,
 				3D3E3B852ADB336B00D530AB /* testPage.swift */,
 				3D3E3B8A2ADB58E800D530AB /* createPage.swift */,
@@ -266,9 +281,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				562B3EFB2ADC0EEC003985A9 /* TabBarViwe.swift in Sources */,
 				3D3E3B542AD42D2000D530AB /* ContentView.swift in Sources */,
+				562B3EFD2ADC0F70003985A9 /* LoginScreenView.swift in Sources */,
 				3D3E3B522AD42D2000D530AB /* GohAppApp.swift in Sources */,
+				562B3EFF2ADC0F9A003985A9 /* SignUpView.swift in Sources */,
 				3D3E3B862ADB336B00D530AB /* testPage.swift in Sources */,
+				562B3F012ADC0FC6003985A9 /* MyTripsView.swift in Sources */,
+				562B3F032ADC100A003985A9 /* DiscoverView.swift in Sources */,
 				3D3E3B802ADAEC9200D530AB /* invitationsPage.swift in Sources */,
 				3D3E3B8B2ADB58E800D530AB /* createPage.swift in Sources */,
 			);
