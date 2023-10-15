@@ -14,6 +14,9 @@
 		3D3E3B632AD42D2100D530AB /* GohAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E3B622AD42D2100D530AB /* GohAppTests.swift */; };
 		3D3E3B6D2AD42D2100D530AB /* GohAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E3B6C2AD42D2100D530AB /* GohAppUITests.swift */; };
 		3D3E3B6F2AD42D2100D530AB /* GohAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E3B6E2AD42D2100D530AB /* GohAppUITestsLaunchTests.swift */; };
+		3D3E3B802ADAEC9200D530AB /* invitationsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E3B7F2ADAEC9100D530AB /* invitationsPage.swift */; };
+		3D3E3B862ADB336B00D530AB /* testPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E3B852ADB336B00D530AB /* testPage.swift */; };
+		3D3E3B8B2ADB58E800D530AB /* createPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E3B8A2ADB58E800D530AB /* createPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		3D3E3B682AD42D2100D530AB /* GohAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GohAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3E3B6C2AD42D2100D530AB /* GohAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GohAppUITests.swift; sourceTree = "<group>"; };
 		3D3E3B6E2AD42D2100D530AB /* GohAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GohAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3D3E3B7F2ADAEC9100D530AB /* invitationsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = invitationsPage.swift; sourceTree = "<group>"; };
+		3D3E3B852ADB336B00D530AB /* testPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testPage.swift; sourceTree = "<group>"; };
+		3D3E3B8A2ADB58E800D530AB /* createPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 			children = (
 				3D3E3B512AD42D2000D530AB /* GohAppApp.swift */,
 				3D3E3B532AD42D2000D530AB /* ContentView.swift */,
+				3D3E3B7F2ADAEC9100D530AB /* invitationsPage.swift */,
+				3D3E3B852ADB336B00D530AB /* testPage.swift */,
+				3D3E3B8A2ADB58E800D530AB /* createPage.swift */,
 				3D3E3B552AD42D2100D530AB /* Assets.xcassets */,
 				3D3E3B572AD42D2100D530AB /* Preview Content */,
 			);
@@ -259,6 +268,9 @@
 			files = (
 				3D3E3B542AD42D2000D530AB /* ContentView.swift in Sources */,
 				3D3E3B522AD42D2000D530AB /* GohAppApp.swift in Sources */,
+				3D3E3B862ADB336B00D530AB /* testPage.swift in Sources */,
+				3D3E3B802ADAEC9200D530AB /* invitationsPage.swift in Sources */,
+				3D3E3B8B2ADB58E800D530AB /* createPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
