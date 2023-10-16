@@ -6,16 +6,47 @@
 //
 
 import SwiftUI
+struct Trips: Identifiable{
+    var id = UUID()
+    var img = ""
+    var date = Date()
+}
 
+struct TripsRow: View {
+    var trips: Trips
+    
+    var body: some View {
+        HStack{
+            Image(trips.img)
+                        .resizable()
+                        .frame( width: 85, height: 85)
+                        .padding()
+            VStack(alignment: .leading){
+                HStack{
+                    // Text(trips.date, style: .day)
+                    Text(trips.date, style: .time).foregroundColor(Color("titleGray"))}
+                Text(trips.date, style: .date).foregroundColor(Color("titleGray"))
+            }
+        }
+        
+    }
+}
 struct MyTripsView: View {
     
     
     var body: some View {
-        VStack(alignment: .leading,spacing: 24){
+        
+        let first = Trips(img:"via",date: Date())
+        let seconed = Trips(img:"blvd",date: Date())
+        
+       let trips = [first, seconed]
+        
+        
+        VStack(alignment: .leading){
             
             VStack(alignment: .leading){
                 HStack{
-                    Text("Hello Again!")
+                    Text("My Trips")
                     
                         .font(.title)
                         .bold()
@@ -26,13 +57,16 @@ struct MyTripsView: View {
                         Image(systemName: "plus").foregroundColor(Color("Green")).font(.system(size: 26))
                     }
                 }
-                Divider().padding(.vertical)
+                Divider()
                 //  Spacer()
-            } .padding(.vertical)
+            }
             
-            
+            List(trips) {trip in TripsRow(trips: trip)}
+                .listStyle(.plain)
+                
             
             Spacer()
+            
         }
         .padding()
     }
