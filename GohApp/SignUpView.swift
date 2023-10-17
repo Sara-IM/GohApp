@@ -11,6 +11,7 @@ struct SignUpView: View {
     @State var name: String=""
     @State var phoneNumber: String=""
     @State var password: String=""
+    @State var showModal = false
     var body: some View {
         VStack(alignment: .leading,spacing: 24){
             VStack(alignment: .leading){
@@ -42,9 +43,12 @@ struct SignUpView: View {
             
             HStack{
                 Spacer()
-                Button("Sign Up", action: {})
+                Button("Sign Up", action: {showModal=true})
                     .frame(width: 157, height: 48)
                     .buttonStyle(.bordered).background(Color("Green")).foregroundColor(.white).cornerRadius(21).bold()
+                    .fullScreenCover(isPresented: $showModal){
+                        TabBarViwe()
+                    }
                 Spacer()
             }
             Spacer()

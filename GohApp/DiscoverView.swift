@@ -88,14 +88,11 @@ struct DiscoverView: View {
                 .navigationTitle("Discover")
                 .toolbar {
                     ToolbarItem(placement: .topBarTrailing) {
-                        Button(action: {
+                        Button(action: {}){
+                           Image(systemName: "person.fill")
+                                .padding(.top, 90).foregroundColor(Color("Green"))
                             
-                            
-                        }, label: {
-                           Image(systemName: "person")
-                                .padding(.top, 90)
-                            
-                        })
+                        }
                     }
                 }
             .searchable(text: $searchText)

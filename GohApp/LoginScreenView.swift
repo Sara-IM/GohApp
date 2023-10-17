@@ -12,7 +12,9 @@ struct LoginScreenView: View {
     
     @State var phoneNumber: String=""
     @State var password: String=""
+    @State var showModal = false
     var body: some View {
+        NavigationStack{
         VStack(alignment: .leading,spacing: 24){
             
            VStack(alignment: .leading){
@@ -43,21 +45,34 @@ struct LoginScreenView: View {
            
             HStack{
                 Spacer()
-                
+             
                 Text("Not Registered?").foregroundColor(Color("Gray"))
-                Button(action: {}){
-                    Text("Click here").foregroundColor(Color("Green")).italic()
+                
+                    VStack{
+                        NavigationLink {
+                            SignUpView()
+                        } label: {
+                            Text("Click here").foregroundColor(Color("Green")).italic()
+                        }}
+                Spacer()
                 }
-            Spacer()
+                
+                
+                
+              
+           
             }
             
             
             
             HStack{
                 Spacer()
-                Button("Log In", action: {})
+                
+                
+                Button("Log In", action: {showModal=true})
                     .frame(width: 157, height: 48)
-                    .buttonStyle(.bordered).background(Color("Green")).foregroundColor(.white).cornerRadius(21).bold()
+                    .buttonStyle(.bordered).background(Color("Green")).foregroundColor(.white).cornerRadius(21).bold().fullScreenCover(isPresented: $showModal){
+                        TabBarViwe()                    }
                 
                 Spacer()
                 
