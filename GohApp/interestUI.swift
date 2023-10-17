@@ -10,7 +10,15 @@ import SwiftUI
 struct interestUI: View {
     @State var Distance : Int = 0
     @State var Budget : Int = 0
-    @State var index : Bool = false
+    @State private var isSelected1 = false
+    @State private var isSelected2 = false
+    @State private var isSelected3 = false
+    @State private var isSelected4 = false
+    @State private var isSelected5 = false
+    @State private var isSelected6 = false
+    @State private var isSelected7 = false
+    
+    //@State var index : Bool = false
     /*@Binding var isSelected: Bool
     @State var color : Color
     @State var text : String*/
@@ -26,21 +34,57 @@ struct interestUI: View {
             
             Divider()
             
-            /*ZStack{
-             Capsule()
-             .frame(height: 50)
-             .foregroundColor(isSelected ? color : .gray)
-             Text(text)
-             .foregroundColor(.black)
-             }*/
-            
+
             Text("Select your interests...").bold()
             
+            HStack{
+                selected(isSelected: $isSelected1, color: .green,color2: .white ,text: "concerts").onTapGesture {
+                    isSelected1.toggle()
+                    
+                }
+ 
+                selected(isSelected: $isSelected2,color: .green,color2: .white ,text: "malls").onTapGesture {
+                    isSelected2.toggle()
+                    
+                    
+                }
+                
+                selected(isSelected: $isSelected3,color: .green,color2: .white ,text: "museums").onTapGesture {
+                    isSelected3.toggle()
+                    
+                }
+                
+                selected(isSelected: $isSelected7,color: .green,color2: .white ,text: "cinema").onTapGesture {
+                    isSelected7.toggle()
+                    
+                }
+            }
+            
             HStack {
+                selected(isSelected: $isSelected4, color: .green,color2: .white ,text: "coffee shops").onTapGesture {
+                    isSelected4.toggle()
+                    
+                }
+                
+                selected(isSelected: $isSelected5,color: .green,color2: .white ,text: "work shops").onTapGesture {
+                    isSelected5.toggle()
+                    
+                }
+                
+                selected(isSelected: $isSelected6,color: .green,color2: .white ,text: "restaurants").onTapGesture {
+                    isSelected6.toggle()
+                    
+                }
+                
+
+            }
+            
+
+            
+            /*HStack {
                 tabButton(title: "restaurants")
                 tabButton(title: "museums")
                 tabButton(title: "work shops")
-                
                 
             }
             
@@ -50,8 +94,7 @@ struct interestUI: View {
                 tabButton(title: "concerts")
                 
                 tabButton(title: "cinema")
-            }
-            
+            }*/
 
             
             Stepper {
@@ -82,13 +125,18 @@ struct interestUI: View {
         }
         .padding()
         
-        .background(self.index ? Color(.green).opacity(0.2): Color(.lightGray).opacity(0.2))
+        .background(Color(.green).opacity(0.2)// Color(.lightGray).opacity(0.2))
+                    )
         
         .foregroundColor(.gray)
         .clipShape(Capsule())
     }
+    
+    
 
     }
+
+
 
 /*struct ContenView_Previews: PreviewProvider{
     static var previews: some View{
@@ -98,7 +146,7 @@ struct interestUI: View {
 
 
 #Preview {
-    interestUI(/*isSelected:.constant(false), color: .blue, text: "option"*/index: false)
+    interestUI()
     
    
 }
