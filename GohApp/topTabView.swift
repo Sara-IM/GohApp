@@ -1,33 +1,41 @@
 //
+//  ContentView.swift
+//  ctab
+//
+//  Created by Amal Saad on 01/04/1445 AH.
+//
 
 import SwiftUI
 
-struct topTabView: View {
+struct topTapView: View {
     @State var selected = 0
     var body: some View {
-       NavigationStack {
-            GeometryReader { _ in
-                Topbar(selected: self.$selected)
+        NavigationStack{
+             // ScrollViewReader{ _ in
+          //  VStack{
+                GeometryReader { _ in
+                    Topbar(selected: self.$selected)
+                    
+                }
+                .background(Color("Color")
+                    .edgesIgnoringSafeArea(.all))
                 
-            }
-            .background(Color("Color")
-                .edgesIgnoringSafeArea(.all))
-           
-
-            if (selected == 0){
-                createView()
-            }
-            if (selected == 1){
-                invitationsView()
-            }
-            
-       }//end nav
+                
+                if (selected == 0){
+                    ContentView1()
+                    
+                }
+                if (selected == 1){
+                    ContentView2()
+                }
+           // }
+        }
+        }//end nav
     }
-
-}
+    
 
 #Preview {
-    topTabView()
+    ContentView()
 }
 
 
@@ -81,16 +89,17 @@ struct Topbar : View{
     
 }
 
-struct createView: View {
+struct ContentView1: View {
     @State var SegmentedChoice = 0
     var body: some View {
         ZStack {
             createPage()
+         // mapPage()
             }
     }
 }
 
-struct invitationsView: View {
+struct ContentView2: View {
     @State var SegmentedChoice = 0
     var body: some View {
         ZStack {
@@ -99,3 +108,4 @@ struct invitationsView: View {
     }
 }
  
+

@@ -20,6 +20,7 @@
 		3D3E3B862ADB336B00D530AB /* testPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E3B852ADB336B00D530AB /* testPage.swift */; };
 		3D3E3B8B2ADB58E800D530AB /* createPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E3B8A2ADB58E800D530AB /* createPage.swift */; };
 		3D800B2A2ADDDD5C00042120 /* topTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D800B292ADDDD5C00042120 /* topTabView.swift */; };
+		3DA043202ADEFA010032F2DF /* mapPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA0431F2ADEFA010032F2DF /* mapPage.swift */; };
 		562B3EFB2ADC0EEC003985A9 /* TabBarViwe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562B3EFA2ADC0EEC003985A9 /* TabBarViwe.swift */; };
 		562B3EFD2ADC0F70003985A9 /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562B3EFC2ADC0F70003985A9 /* LoginScreenView.swift */; };
 		562B3EFF2ADC0F9A003985A9 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562B3EFE2ADC0F9A003985A9 /* SignUpView.swift */; };
@@ -64,6 +65,7 @@
 		3D3E3B852ADB336B00D530AB /* testPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testPage.swift; sourceTree = "<group>"; };
 		3D3E3B8A2ADB58E800D530AB /* createPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createPage.swift; sourceTree = "<group>"; };
 		3D800B292ADDDD5C00042120 /* topTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topTabView.swift; sourceTree = "<group>"; };
+		3DA0431F2ADEFA010032F2DF /* mapPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapPage.swift; sourceTree = "<group>"; };
 		562B3EFA2ADC0EEC003985A9 /* TabBarViwe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViwe.swift; sourceTree = "<group>"; };
 		562B3EFC2ADC0F70003985A9 /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
 		562B3EFE2ADC0F9A003985A9 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				562B3F002ADC0FC6003985A9 /* MyTripsView.swift */,
 				562B3F022ADC100A003985A9 /* DiscoverView.swift */,
 				3D3E3B7F2ADAEC9100D530AB /* invitationsPage.swift */,
+				3DA0431F2ADEFA010032F2DF /* mapPage.swift */,
 				3D3E3B852ADB336B00D530AB /* testPage.swift */,
 				3D3E3B8A2ADB58E800D530AB /* createPage.swift */,
 				A71C26BC2ADD73B000816614 /* CircleSpinnerPage.swift */,
@@ -306,6 +309,7 @@
 				562B3EFD2ADC0F70003985A9 /* LoginScreenView.swift in Sources */,
 				2E393A982ADD6FE000B409F3 /* interestUI.swift in Sources */,
 				3D3E3B522AD42D2000D530AB /* GohAppApp.swift in Sources */,
+				3DA043202ADEFA010032F2DF /* mapPage.swift in Sources */,
 				562B3EFF2ADC0F9A003985A9 /* SignUpView.swift in Sources */,
 				A71C26BE2ADD73C700816614 /* CircleSpinnerPage.swift in Sources */,
 				A71C26BB2ADD737D00816614 /* yourTripToPage.swift in Sources */,
@@ -480,6 +484,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GohApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "we want your location to find all the entertainment places around you\n";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -508,6 +513,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GohApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "we want your location to find all the entertainment places around you\n";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

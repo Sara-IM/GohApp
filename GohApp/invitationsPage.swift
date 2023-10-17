@@ -1,8 +1,8 @@
-//
+
 import SwiftUI
 
 struct invitationsPage: View {
-    @State var userLocation : String = " "
+    @State var userLocation : String = "Alghaliyah"
     @State var phoneNumber : Int = 0
     @State var index = 0
     @State private var isAccepted = Bool()
@@ -23,8 +23,9 @@ struct invitationsPage: View {
                 //You have received an invitation to a trip from
                 Label("You have received invite to a trip from :", systemImage: " ")
                 HStack{//Hstack 2
-                TextField(" ", text: $userLocation)
+                TextField("", text: $userLocation)
                     .padding()
+                    .disabled(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
                     .background(Color("textFieldG")/*.opacity(0.3)*/.cornerRadius(10))
                 //----------------------------------------------------
                 HStack {// Hstack 3
@@ -49,14 +50,25 @@ struct invitationsPage: View {
                 .background(
                     NavigationLink(" ", destination: testPage() , isActive : $isAccepted))
                 }//ens Hstack 2
-
+                
+            
+                
+                
+                
+                
+                //----------------------------------------------------
+                
+                //  .padding(.top, 200)
                 
             }.padding()
             .padding(.bottom, 370)
 
+       
    }
 }
 
 #Preview {
     invitationsPage()
 }
+
+
