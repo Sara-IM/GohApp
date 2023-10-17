@@ -15,7 +15,8 @@ struct createPage: View {
          NavigationStack{
         //  ScrollView {
         VStack(alignment: .leading, spacing: 24){
-            
+            Spacer()
+           
             Text("Create your journey").bold().font(.largeTitle)
                 .foregroundColor(Color("titleGray"))/*.opacity(0.3)*/.cornerRadius(10)
               
@@ -82,13 +83,13 @@ struct createPage: View {
                 Spacer()
                 
             }// end Hstack2
-            NavigationLink("", destination: testPage(), isActive: $isPage2Active)
+            NavigationLink("", destination: interestUI(), isActive: $isPage2Active)
             
             
         }//end VStack1
         //  }// end NavigationView
         .padding()
-        .padding(.bottom, 130)
+       // .padding(.bottom, 130)
         
     }
 }//

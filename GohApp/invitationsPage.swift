@@ -10,8 +10,7 @@ struct invitationsPage: View {
     var body: some View {
     //  NavigationStack {
             VStack(alignment: .leading, spacing: 24){
-                
-  
+                Spacer()
                 Text("Your Invitations").bold().font(.largeTitle)
                     .foregroundColor(Color("titleGray"))/*.opacity(0.3)*/.cornerRadius(10)
                 
@@ -48,7 +47,7 @@ struct invitationsPage: View {
                     }
                 }// end Hstack3
                 .background(
-                    NavigationLink(" ", destination: testPage() , isActive : $isAccepted))
+                    NavigationLink(" ", destination: interestUIReciever() , isActive : $isAccepted))
                 }//ens Hstack 2
                 
             
@@ -61,7 +60,7 @@ struct invitationsPage: View {
                 //  .padding(.top, 200)
                 
             }.padding()
-            .padding(.bottom, 370)
+            .padding(.bottom, 300)
 
        
    }

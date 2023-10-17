@@ -1,4 +1,10 @@
 //
+//  interestUIReciever.swift
+//  GohApp
+//
+//  Created by Sara Ibrahim Almashharawi on 17/10/2023.
+//
+//
 //  ContentView.swift
 //  interestsUI
 //
@@ -7,7 +13,7 @@
 
 import SwiftUI
 
-struct interestUI: View {
+struct interestUIReciever: View {
     @State var Distance : Int = 0
     @State var Budget : Int = 0
     @State private var isSelected1 = false
@@ -27,7 +33,7 @@ struct interestUI: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {
             
-            Text("Hello Alghaliyah!")//array later
+            Text("Hello Amal!")//array later
                 .font(.largeTitle)
                 .bold()
                 .padding(10)
@@ -120,11 +126,11 @@ struct interestUI: View {
             
             HStack{
                 Spacer()
-                Button("Next", action: {showModal=true})
+                Button("Submit", action: {showModal=true})
                     .frame(width: 157, height: 48)
                     .buttonStyle(.bordered).background(Color("Green")).foregroundColor(.white).cornerRadius(21).bold()
                     .fullScreenCover(isPresented: $showModal){
-                        suggestionPage()
+                        yourTripToReciever()
                     }
                 Spacer()
             }
@@ -159,7 +165,7 @@ struct interestUI: View {
 
 
 #Preview {
-    interestUI()
+    interestUIReciever()
     
    
 }

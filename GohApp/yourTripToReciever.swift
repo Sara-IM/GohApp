@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct yourTripToPage: View {
+struct yourTripToReciever: View {
     @State var showModal = false
     var body: some View {
             VStack (alignment: .leading, spacing:24) {
                 VStack(alignment: .leading, spacing:24) {
-                    Text("Alghaliyah")
+                    Text("Amal")
                         .font(.title).bold()
                         .foregroundColor(Color("titleGray"))
                         .padding()
@@ -57,5 +57,5 @@ struct yourTripToPage: View {
                 }
             }}}
     #Preview {
-        yourTripToPage()
+        yourTripToReciever()
     }

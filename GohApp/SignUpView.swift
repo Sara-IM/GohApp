@@ -47,7 +47,7 @@ struct SignUpView: View {
                     .frame(width: 157, height: 48)
                     .buttonStyle(.bordered).background(Color("Green")).foregroundColor(.white).cornerRadius(21).bold()
                     .fullScreenCover(isPresented: $showModal){
-                        TabBarViwe()
+                        TabBarViwe(selectedTab: "Two")
                     }
                 Spacer()
             }

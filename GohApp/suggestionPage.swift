@@ -9,17 +9,18 @@
 import SwiftUI
 
 struct suggestionPage: View {
+    @State var showModal = false
     var body: some View {
         VStack (alignment: .leading, spacing:24) {
             Text("Alghaliyah")
                 .font(.title).bold()
-                .foregroundColor(.black)
+                .foregroundColor(Color("titleGray"))
       
                 //.padding()
             Divider()
             Text("Our Suggestion ...")
                 .font(.title).bold()
-                .foregroundColor(.black)
+                .foregroundColor(Color("titleGray"))
             .padding()
 
             HStack {
@@ -78,18 +79,17 @@ struct suggestionPage: View {
                 .padding()}
             
             
-            HStack {// hstack2
-            Spacer()
-            Button("Go!", action: {})
-            .frame(width: 157, height: 48)
-            //.padding(20)
-            .buttonStyle(.bordered)
-            .background(Color("Green"))
-            .foregroundColor(.white)
-            .cornerRadius(21)
-            .bold()
-            Spacer()
-            }// end Hstack2
+            
+            HStack{
+                Spacer()
+                Button("Go", action: {showModal=true})
+                    .frame(width: 157, height: 48)
+                    .buttonStyle(.bordered).background(Color("Green")).foregroundColor(.white).cornerRadius(21).bold()
+                    .fullScreenCover(isPresented: $showModal){
+                        yourTripToPage()
+                    }
+                Spacer()
+            }
         }
         .padding()
        // .padding(.bottom, 10)

@@ -26,6 +26,10 @@
 		562B3EFF2ADC0F9A003985A9 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562B3EFE2ADC0F9A003985A9 /* SignUpView.swift */; };
 		562B3F012ADC0FC6003985A9 /* MyTripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562B3F002ADC0FC6003985A9 /* MyTripsView.swift */; };
 		562B3F032ADC100A003985A9 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562B3F022ADC100A003985A9 /* DiscoverView.swift */; };
+		562B3F052ADF069B003985A9 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562B3F042ADF069B003985A9 /* SplashView.swift */; };
+		562B3F072ADF088F003985A9 /* MyTrips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562B3F062ADF088F003985A9 /* MyTrips.swift */; };
+		562B3F092ADF1329003985A9 /* interestUIReciever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562B3F082ADF1329003985A9 /* interestUIReciever.swift */; };
+		562B3F0B2ADF191C003985A9 /* yourTripToReciever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562B3F0A2ADF191C003985A9 /* yourTripToReciever.swift */; };
 		A71C26B92ADD733D00816614 /* suggestionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71C26B82ADD733D00816614 /* suggestionPage.swift */; };
 		A71C26BB2ADD737D00816614 /* yourTripToPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71C26BA2ADD737D00816614 /* yourTripToPage.swift */; };
 		A71C26BE2ADD73C700816614 /* CircleSpinnerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71C26BC2ADD73B000816614 /* CircleSpinnerPage.swift */; };
@@ -71,6 +75,10 @@
 		562B3EFE2ADC0F9A003985A9 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		562B3F002ADC0FC6003985A9 /* MyTripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTripsView.swift; sourceTree = "<group>"; };
 		562B3F022ADC100A003985A9 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		562B3F042ADF069B003985A9 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		562B3F062ADF088F003985A9 /* MyTrips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTrips.swift; sourceTree = "<group>"; };
+		562B3F082ADF1329003985A9 /* interestUIReciever.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = interestUIReciever.swift; sourceTree = "<group>"; };
+		562B3F0A2ADF191C003985A9 /* yourTripToReciever.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yourTripToReciever.swift; sourceTree = "<group>"; };
 		A71C26B82ADD733D00816614 /* suggestionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suggestionPage.swift; sourceTree = "<group>"; };
 		A71C26BA2ADD737D00816614 /* yourTripToPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yourTripToPage.swift; sourceTree = "<group>"; };
 		A71C26BC2ADD73B000816614 /* CircleSpinnerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleSpinnerPage.swift; sourceTree = "<group>"; };
@@ -125,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				A71C26BA2ADD737D00816614 /* yourTripToPage.swift */,
+				562B3F0A2ADF191C003985A9 /* yourTripToReciever.swift */,
 				A71C26B82ADD733D00816614 /* suggestionPage.swift */,
 				3D3E3B512AD42D2000D530AB /* GohAppApp.swift */,
 				3D3E3B532AD42D2000D530AB /* ContentView.swift */,
@@ -132,10 +141,13 @@
 				3D800B292ADDDD5C00042120 /* topTabView.swift */,
 				562B3EFC2ADC0F70003985A9 /* LoginScreenView.swift */,
 				2E393A972ADD6FE000B409F3 /* interestUI.swift */,
+				562B3F082ADF1329003985A9 /* interestUIReciever.swift */,
 				2E44B3F02ADEDCDE0017177C /* selected.swift */,
 				562B3EFE2ADC0F9A003985A9 /* SignUpView.swift */,
 				562B3F002ADC0FC6003985A9 /* MyTripsView.swift */,
 				562B3F022ADC100A003985A9 /* DiscoverView.swift */,
+				562B3F062ADF088F003985A9 /* MyTrips.swift */,
+				562B3F042ADF069B003985A9 /* SplashView.swift */,
 				3D3E3B7F2ADAEC9100D530AB /* invitationsPage.swift */,
 				3DA0431F2ADEFA010032F2DF /* mapPage.swift */,
 				3D3E3B852ADB336B00D530AB /* testPage.swift */,
@@ -304,10 +316,13 @@
 			files = (
 				3D800B2A2ADDDD5C00042120 /* topTabView.swift in Sources */,
 				562B3EFB2ADC0EEC003985A9 /* TabBarViwe.swift in Sources */,
+				562B3F0B2ADF191C003985A9 /* yourTripToReciever.swift in Sources */,
 				2E44B3F12ADEDCDE0017177C /* selected.swift in Sources */,
 				3D3E3B542AD42D2000D530AB /* ContentView.swift in Sources */,
+				562B3F092ADF1329003985A9 /* interestUIReciever.swift in Sources */,
 				562B3EFD2ADC0F70003985A9 /* LoginScreenView.swift in Sources */,
 				2E393A982ADD6FE000B409F3 /* interestUI.swift in Sources */,
+				562B3F052ADF069B003985A9 /* SplashView.swift in Sources */,
 				3D3E3B522AD42D2000D530AB /* GohAppApp.swift in Sources */,
 				3DA043202ADEFA010032F2DF /* mapPage.swift in Sources */,
 				562B3EFF2ADC0F9A003985A9 /* SignUpView.swift in Sources */,
@@ -318,6 +333,7 @@
 				A71C26B92ADD733D00816614 /* suggestionPage.swift in Sources */,
 				562B3F032ADC100A003985A9 /* DiscoverView.swift in Sources */,
 				3D3E3B802ADAEC9200D530AB /* invitationsPage.swift in Sources */,
+				562B3F072ADF088F003985A9 /* MyTrips.swift in Sources */,
 				3D3E3B8B2ADB58E800D530AB /* createPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
