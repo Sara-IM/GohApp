@@ -54,7 +54,7 @@ struct MyTripsView: View {
                         Spacer()
                         
                         NavigationLink {
-                            topTabView()
+                            topTapView()
                         } label: {
                          
                                 Image(systemName: "plus").foregroundColor(Color("Green")).font(.system(size: 26))
