@@ -39,38 +39,44 @@ struct MyTripsView: View {
         let first = Trips(img:"via",date: Date())
         let seconed = Trips(img:"blvd",date: Date())
         
-       let trips = [first, seconed]
-        
-        
-        VStack(alignment: .leading){
+        let trips = [first, seconed]
+        NavigationStack{
             
             VStack(alignment: .leading){
-                HStack{
-                    Text("My Trips")
-                    
-                        .font(.title)
-                        .bold()
-                        .foregroundColor(Color("titleGray")).padding(.vertical)
-                    Spacer()
-                    
-                    Button(action: {}){
-                        Image(systemName: "plus").foregroundColor(Color("Green")).font(.system(size: 26))
-                    }
-                }
-                Divider()
-                //  Spacer()
-            }
-            
-            List(trips) {trip in TripsRow(trips: trip)}
-                .listStyle(.plain)
                 
-            
-            Spacer()
-            
+                VStack(alignment: .leading){
+                    HStack{
+                        Text("My Trips")
+                        
+                            .font(.title)
+                            .bold()
+                            .foregroundColor(Color("titleGray")).padding(.vertical)
+                        Spacer()
+                        
+                        NavigationLink {
+                            topTabView()
+                        } label: {
+                         
+                                Image(systemName: "plus").foregroundColor(Color("Green")).font(.system(size: 26))
+                           
+                        }
+                        
+                        
+                    }
+                    Divider()
+                    //  Spacer()
+                }
+                
+                List(trips) {trip in TripsRow(trips: trip)}
+                    .listStyle(.plain)
+                
+                
+                Spacer()
+                
+            }
+            .padding()
         }
-        .padding()
-    }
-}
+    }}
 
 #Preview {
     MyTripsView()
