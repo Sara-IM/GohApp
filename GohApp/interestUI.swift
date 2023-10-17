@@ -41,7 +41,6 @@ struct interestUI: View {
                 tabButton(title: "museums")
                 tabButton(title: "work shops")
                 
-                
             }
             
             HStack {
@@ -51,7 +50,6 @@ struct interestUI: View {
                 
                 tabButton(title: "cinema")
             }
-            
 
             
             Stepper {
@@ -87,8 +85,12 @@ struct interestUI: View {
         .foregroundColor(.gray)
         .clipShape(Capsule())
     }
+    
+    
 
     }
+
+
 
 /*struct ContenView_Previews: PreviewProvider{
     static var previews: some View{
